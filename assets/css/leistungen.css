@@ -1,0 +1,65 @@
+  /* ===== LEISTUNGEN =====*/
+
+.leistungen {
+    min-height: 100vh;
+    max-width: 1024px;
+    margin: 10rem auto 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+img.hero {
+     width: 750px; 
+     height: 270px; 
+     margin-bottom: 2.5rem;
+    }
+
+.leistungen__title{
+    color: #FCFCFC;
+    text-shadow: 3px 3px 2px rgba(45, 35, 35, 0.851);
+    border-bottom: 2px solid #030303;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+section.leistungen { border-bottom: 2px solid #030303;}
+
+.leistungen__data .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.box {text-align: center; justify-content: flex-start;}
+
+h3 {margin-top: 5px;}
+
+.leistungen__data .image-container .l-image{
+    height: 290px;
+    width: 270px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px rgba(0,0,0,.5);
+    margin: 35px 35px 5px;
+}
+
+  /* ===== MEDIA QUERIES =====*/
+
+@media screen and (max-width: 768px){
+  
+    img.hero {
+        width: 500px; 
+        height: 230px; 
+        margin-bottom: 2rem;
+       }
+
+    .leistungen__title { width: 70%; text-align: justify;}
+
+    h3 { padding-bottom: 7px; border-bottom: 2px solid #fff;}
+    section.leistungen {border-bottom: none;}
+  }

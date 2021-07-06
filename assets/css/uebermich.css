@@ -1,0 +1,116 @@
+
+ /* ===== MEDIA QUERIES =====*/
+
+@media screen and (max-width: 768px){
+    img.about{
+        width: 50%;
+        height: 100%;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 15px;
+        border: 2px solid #fff;
+        box-shadow: 0 0 15px #212121;   
+    }
+    .about__title { width: 70%;}
+    .home__description { padding-bottom: 3rem;}
+    .home__img { width: 50%; height: auto;}
+     main { padding: 2rem 0;}
+    .home__container { margin-top: 15px;}
+    .home{
+      padding-top: 5rem;
+    }
+ }
+ 
+   /* ===== ABOUT =====*/
+
+.home{
+    overflow: hidden;
+    padding-top: 6rem;
+  }
+
+ .home__container{
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 2rem;
+  } 
+  
+  
+  
+  .home__img img{
+    position: absolute;
+    top: 0;
+    left: 0;  
+  }
+
+  .home__img{
+    width: 175px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+  }
+  
+  .home__data{
+    text-align: center;
+  }
+  
+  .about__title{
+    color: #FCFCFC;
+    text-shadow: 3px 3px 2px rgba(45, 35, 35, 0.851);
+    border-bottom: 2px solid #030303;
+    margin: 0 auto;
+    
+  }
+
+  h3 { font-family: var(--title-font);}
+  
+  .home__description{
+    max-width: 600px;
+    color: var(--first-color-darken);
+    text-align: center;
+    line-height: 1.4rem;
+    
+  }
+
+  /* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 769px){
+   
+    body{
+      margin: 0;
+    }
+  
+    .home__container{
+      height: 60vh;
+      grid-template-columns: repeat(2, max-content);
+      grid-template-rows: 1fr;
+      row-gap: 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about__title {
+        font-size: 2rem;
+        width: 25%;
+    }
+
+    img.about {
+        width: 375px;
+        height: 289px;
+        border-radius: 15%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 15px #212121;
+        
+    }
+
+  .home__img {margin-bottom: 20px;}
+
+  }
+
+  @media screen and (min-width: 1024px){
+ 
+    .home__container{
+      justify-content: initial;
+      column-gap: 4rem;
+      height: 55vh;
+    }
+  
+  }

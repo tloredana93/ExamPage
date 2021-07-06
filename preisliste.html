@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/Preisliste.css">
+        <link rel="icon" type="image/png" href="assets/img/logonav.png">
+        <title>Lauren Make-up</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav">
+                <div>
+                    <a href="index.html"><img  class="logo" src="assets/img/LogoMe.png" alt=""> </a> 
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="uebermich.html" class="nav__link">Über mich</a></li>
+                        <li class="nav__item"><a href="leistungen.html" class="nav__link">Leistungen</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link active">Preise</a></li>
+                        <li class="nav__item"><a href="galerie.html" class="nav__link">Galerie</a></li>
+                        <li class="nav__item"><a href="Kontakt.html" class="nav__link">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--===== PREISLISTE =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+
+                    <div class="home__data">
+
+                        <h1 class="home__title"> Preisliste </h1>
+
+                        <ul class="home__description">  
+                              <li>Tages Make-Up</li> <span> 50,-</span>
+                              <li>Abend Make-Up</li> <span> 90,-</span>
+                              <li>Glam Make-Up</li> <span> 120,-</span>
+                              <li>Festival Make-Up</li> <span> 150,-</span>
+                              <li>Shooting Make-up</li><span>70,-</span>
+                              <li>Braut Make-Up</li> <span> 180,-</span>
+                              <li>Haarstyling</li> <span>ab 20,-</span>
+                              <li>Augenbrauen Styling & Färben</li> <span>30,-</span> 
+                              <li>Lash Extension </li> <span>90,-</span> 
+                        </ul>
+                    </div>
+                    <div class="home__img">
+                        <img src="assets/img/img02.png" alt="" data-speed="3" class="move">
+                        <img src="assets/img/img70.png" alt="" data-speed="3" class="move">
+                    </div>
+                </div>
+            </section>
+        </main>
+          <!--===== FOOTER =====-->
+        <footer>
+            <ul class="footer__data"> 
+                <li id="item1">&copy; 2021 Lauren Make-up Artist </li>
+                <li id="item2">
+                    <a href="#" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-facebook-square' ></i></a>
+                </li>
+                <li id="item3"><a href="">Impressum & Datenschutz</a></li>
+            </ul>
+        </footer>
+
+        <!--===== GSAP =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

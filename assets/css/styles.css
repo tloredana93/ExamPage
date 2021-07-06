@@ -1,0 +1,237 @@
+/*===== GOOGLE FONTS =====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 3rem;
+
+  /*===== Colors =====*/
+  --first-color: #B28B82;
+  --first-color-darken: #181818;
+  --white-color: #ffffff;
+  
+  /*===== Font and typography =====*/
+  --body-font: Verdana, Geneva, Tahoma, sans-serif;
+  --title-font: 'Merienda One', cursive; 
+  --big-font-size: 2rem;
+  --normal-font-size: 1.1rem;
+  
+  
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3rem;
+    --normal-font-size: 1.2rem;
+  }
+}
+
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: var(--header-height) 0 0 0; 
+  padding: 0;
+  font-family: var(--body-font); 
+  font-size: var(--normal-font-size);
+  color: var(--first-color-darken);
+  background: linear-gradient(223deg,rgba(77, 73, 74, .8)0%, rgba(89, 86, 86, .8) 50%, rgba(200, 200, 200, 0.8) 100%); 
+}
+
+h1{ 
+   font-family: var(--title-font);
+   color: var(--first-color);
+  }
+
+
+h1,p,ul{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.logo{
+  padding-top: 1.3rem;
+}
+
+  
+/*===== LAYOUT =====*/
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+/*===== NAV =====*/
+
+.l-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.l-header .logo {
+  padding-top: 50px;
+}
+
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1360px;
+  margin: auto;
+}
+
+/* ===== MEDIA QUERIES =====*/
+
+@media screen and (max-width: 768px){
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1.5rem 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: .5s;
+  }
+   i {color: var(--first-color-darken);}
+   img.logo {width: 70%; height: auto;} 
+  .footer__data { display: flex; flex-direction: column; text-align: center; }
+  footer, footer ul li { margin-top: 10px;} 
+  #item1{ order: 3;}
+  #item2{ order: 1; }
+  #item3{ order: 2;}
+  header.l-header { margin-bottom: 20px;} 
+}
+
+/*===== NAVIGATION =====*/
+
+.nav__close{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 2.2rem;
+}
+
+.nav__item{
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.nav__close, .nav__link, .nav__logo, .nav__toggle{
+  color: var(--white-color);
+}
+
+.nav__item {
+  text-align: center;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__toggle{
+  font-size: 2.2rem;
+  padding: .5em .5em 0 0;
+}
+
+.active {
+  color: var(--first-color-darken); 
+  font-size: 1.3rem;
+} 
+
+/*=== Show menu ===*/
+.show{
+  right: 0;
+}
+
+/*===== FOOTER =====*/
+
+.footer__data {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1360px;
+  margin: 10px auto;
+  color: var(--first-color-darken);
+
+}
+
+.footer__data li a {
+  color: var(--first-color-darken);
+}
+
+.footer__data li a i {
+  font-size: 2.8rem;
+  margin-top: -1rem;
+  color: var(--white-color);
+}
+
+.footer__data li a i:hover {
+color: var(--first-color-darken);
+}
+
+
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 769px){
+  body{
+    margin: 0;
+  }
+
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav__toggle, .nav__close{
+    display: none;
+  }
+
+  .nav__list{
+    display: flex;
+  }
+
+  .nav__item{
+    margin-left: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  nav.nav , main, footer { margin: 0 1.5rem;}
+
+}
+
+@media screen and (min-width: 1024px){
+  .bd-grid{
+    margin: auto;
+  }
+  
+}
+
+

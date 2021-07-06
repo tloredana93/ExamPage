@@ -1,0 +1,141 @@
+/*=====  MEDIA QUERIES =====*/
+
+@media screen and (max-width: 768px){
+ 
+   h1.home__title { padding-top: 1.5rem;}
+   .home__description { padding-bottom: 3rem;}
+  .home__img { width: 50%; height: auto;}
+  .home__data ul{ width: 50%;}
+  main {padding-bottom: 2rem;}
+}
+
+/*=====  PREISLISTE =====*/
+
+.home {
+  overflow: hidden;
+  padding-top: 5rem;
+}
+ .home__container{
+  height: 90vh;
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 2rem;
+} 
+
+.home__img{
+  position: relative;
+  justify-self: center;
+}
+
+.home__img img{
+  position: absolute;
+  top: 0;
+  left: 0;  
+}
+
+.home__data {
+  text-align: center;
+  align-self: flex-start;
+}
+
+.home__title{
+  font-size: 2rem;
+  color: var(--first-color-darken);
+  border-bottom: 4px;
+  background: linear-gradient(to right,rgb(105, 65, 62) 0%,rgb(190, 173, 171)60%,rgb(225, 225, 225)100%);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 7px;
+}
+
+.home__description{
+  max-width: 600px;
+  padding: 15px 0;
+  color: var(--first-color-darken);
+ 
+}
+
+.home__description li {
+    text-align: start;
+}
+
+.home__description span {
+    text-align: end;
+}
+
+
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 769px){
+  body{
+    margin: 0;
+  }
+
+
+  .home__container{
+    height: 90vh;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: 1fr;
+    row-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__img{
+    width: 375px;
+    height: 289px;
+  }
+
+.home__data { padding-top: 5rem; }
+
+ul.home__description { column-gap: 6rem;}
+ 
+}
+
+ul.home__description li {
+    font-weight: 530;
+    font-size: 1.3rem;
+}
+
+ul.home__description li {
+    padding-bottom: 15px; 
+}
+ul.home__description {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    width: 100%;
+    background: linear-gradient(to right,rgb(105, 65, 62) 0%,rgb(190, 173, 171)60%,rgb(225, 225, 225)100%);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+ 
+  .home__container{
+    justify-content: initial;
+    column-gap: 7rem;
+    height: 83vh;
+  }
+
+  .home__img{
+    width: 600px;
+    height: 450px;
+  }
+
+  .home__img img{
+    width: 450px;
+   
+  }
+
+  ul.home__description { column-gap: 10rem;}
+  
+}
+
+
+
+
