@@ -23,9 +23,11 @@
  
    /* ===== ABOUT =====*/
 
+
+
 .home{
     overflow: hidden;
-    padding-top: 6rem;
+    padding-top: 10rem;
   }
 
  .home__container{
@@ -78,6 +80,8 @@
       margin: 0;
     }
   
+
+
     .home__container{
       height: 60vh;
       grid-template-columns: repeat(2, max-content);

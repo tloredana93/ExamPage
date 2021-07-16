@@ -173,6 +173,26 @@ img{
   right: 0;
 }
 
+/*===== BESTATIGUNG =====*/
+ .bestatigung__container {
+  height: 50vh;
+  width: 50vw;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 15rem; 
+}
+
+h1#b-title { 
+  font-size: 3rem;
+  text-shadow: 0px 3px 4px #181818;
+  margin-bottom: 1rem; 
+}
+
+p#b-description {
+   color: #ffffff;
+   font-size: 1.3rem;
+  }
+
 /*===== FOOTER =====*/
 
 .footer__data {
@@ -223,7 +243,9 @@ color: var(--first-color-darken);
     margin-bottom: 0;
   }
 
-  nav.nav , main, footer { margin: 0 1.5rem;}
+  main {min-height: 96vh;}
+
+
 
 }
 

@@ -76,8 +76,10 @@ background-color: var(--first-color-darken);
     margin: 0;
   }
 
+  
+
   .home__container{
-    height: 90vh;
+    height: 60vh;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: 1fr;
     row-gap: 0;

@@ -1,9 +1,10 @@
+
 /*=====  MEDIA QUERIES =====*/
 
 @media screen and (max-width: 768px){
  
    h1.home__title { padding-top: 1.5rem;}
-   .home__description { padding-bottom: 3rem;}
+  .home__description { padding-bottom: 3rem;}
   .home__img { width: 50%; height: auto;}
   .home__data ul{ width: 50%;}
   main {padding-bottom: 2rem;}
@@ -34,7 +35,6 @@
 
 .home__data {
   text-align: center;
-  align-self: flex-start;
 }
 
 .home__title{
@@ -73,7 +73,7 @@
 
 
   .home__container{
-    height: 90vh;
+    height: 60vh;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: 1fr;
     row-gap: 0;
@@ -86,7 +86,7 @@
     height: 289px;
   }
 
-.home__data { padding-top: 5rem; }
+
 
 ul.home__description { column-gap: 6rem;}
  
