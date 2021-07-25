@@ -8,7 +8,7 @@
 }
 
  .home__container{
-  height: 90vh;
+  height: 100vh;
   grid-template-rows: repeat(2, max-content);
   row-gap: 2rem;
 } 
@@ -64,19 +64,24 @@ background-color: var(--first-color-darken);
 
 @media screen and (max-width: 768px){
   h1.home__title { padding: 1.5rem 0;}
-  p.home__description { padding-bottom: 3rem;}
- .home__img { width: 50%; height: auto;}
+  p.home__description { padding-bottom: 3rem; margin: 0 auto;}
+ .home__img { width: 60%; height: 300px; overflow: hidden;}
  .home__button { font-size: 1.5rem; padding: 1rem;}
- .main {padding-bottom: 1rem;}
+ main {padding-bottom: 3.5rem;}
+ .home__container { margin-top: 2rem;height: 75vh;}
+ footer {margin-top: -50px;}
 }
+
+@media screen and (max-width: 414px) {
+  .home__container {height: 95vh;}
+}
+
 
 
 @media screen and (min-width: 769px){
   body{
     margin: 0;
-  }
-
-  
+  }  
 
   .home__container{
     height: 60vh;

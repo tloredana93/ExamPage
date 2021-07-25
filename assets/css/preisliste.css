@@ -1,15 +1,3 @@
-
-/*=====  MEDIA QUERIES =====*/
-
-@media screen and (max-width: 768px){
- 
-   h1.home__title { padding-top: 1.5rem;}
-  .home__description { padding-bottom: 3rem;}
-  .home__img { width: 50%; height: auto;}
-  .home__data ul{ width: 50%;}
-  main {padding-bottom: 2rem;}
-}
-
 /*=====  PREISLISTE =====*/
 
 .home {
@@ -39,7 +27,8 @@
 
 .home__title{
   font-size: 2rem;
-  color: var(--first-color-darken);
+  color: #FCFCFC;
+  text-shadow: 3px 3px 2px rgba(45, 35, 35, 0.851);
   border-bottom: 4px;
   background: linear-gradient(to right,rgb(105, 65, 62) 0%,rgb(190, 173, 171)60%,rgb(225, 225, 225)100%);
   background-size: 100% 5px;
@@ -47,6 +36,7 @@
   background-position: bottom;
   padding-bottom: 7px;
 }
+
 
 .home__description{
   max-width: 600px;
@@ -61,6 +51,43 @@
 
 .home__description span {
     text-align: end;
+}
+
+/*=====  MEDIA QUERIES =====*/
+
+@media screen and (max-width: 768px){
+ 
+   h1.home__title { padding-top: 1rem; 
+     background: none; 
+     border-bottom: 3px solid #030303;
+  }
+  .home__description { padding-bottom: 3rem;}
+  .home__img { width: 60%; height: auto;}
+  .home__data {margin: 0 auto;}
+  .home__data ul{ width: 50%; padding: 20px 30px;}
+  main {padding-bottom: 2rem;}
+  ul.home__description {background-size: cover !important;}
+ 
+  .home__img {
+    width: 60%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+footer { margin-top: -70px;}
+}
+
+
+@media screen and (max-width: 415px) {
+  .home__data ul {padding: 20px 0 10px; margin-top: 10px;}
+  footer {margin-top:0; }
+  .home__container.bd-grid {
+    margin:10px 0 0 0;
+    width: 100%;
+    height: 93vh;
+}
+h1.home__title { margin-bottom: -10px;}
+.home__img { width: 50%; height: 200px;}
 }
 
 

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 94vh;
+    min-height: 100vh;
   }
   
   .container {
@@ -216,6 +216,7 @@
    .container .contactInfo {
      width: 100%;
      height: auto;
+     padding: 20px;
    } 
    
    .container .contactInfo ul.sci {
@@ -229,38 +230,21 @@
    .container .contactForm {
      width: 100%;
      height: auto;
+     padding: 20px;
    }
    
    footer {
-     padding-top: 20rem; 
+     padding-top: 10rem; 
    }
+
+   .container .contactForm .formBox .inputBox.w50 {
+    width: 100%;
+  } 
    
+  main {padding: 20px 0;}
    }
   
   
-  @media screen and (max-width: 768px) {
-    
-    .container {
-      top: 15%;
-    }
-    .container .contactForm  {
-      padding: 20px;
-    }
-  
-    .container .contactInfo {
-      padding: 20px;
-    
-    } 
-  
-    .container .contactForm .formBox .inputBox.w50 {
-      width: 100%;
-    } 
-    
-    footer {
-      padding-top: 25rem; 
-    }
-  }
-  
-  
-  
-  
+   @media screen and (max-width: 415px) {
+     footer {margin-top: 15rem;}
+   }

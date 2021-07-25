@@ -118,12 +118,13 @@ img{
     width: 70%;
     height: 100%;
     padding: 3.5rem 1.5rem 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(80, 77, 77, 0.8);
     backdrop-filter: blur(10px);
+   
     transition: .5s;
   }
    i {color: var(--first-color-darken);}
-   img.logo {width: 70%; height: auto;} 
+   img.logo {width: 75%; height: auto;} 
   .footer__data { display: flex; flex-direction: column; text-align: center; }
   footer, footer ul li { margin-top: 10px;} 
   #item1{ order: 3;}
@@ -131,6 +132,8 @@ img{
   #item3{ order: 2;}
   header.l-header { margin-bottom: 20px;} 
 }
+
+
 
 /*===== NAVIGATION =====*/
 

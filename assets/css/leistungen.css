@@ -58,8 +58,8 @@ h3 {margin-top: 5px;}
         margin-bottom: 2rem;
        }
 
-    .leistungen__title { width: 70%; text-align: justify;}
+    .leistungen__title { width: 70%; text-align: center;}
 
     h3 { padding-bottom: 7px; border-bottom: 2px solid #fff;}
-    section.leistungen {border-bottom: none;}
+    section.leistungen {border-bottom: none; margin-bottom: 0;}
   }
